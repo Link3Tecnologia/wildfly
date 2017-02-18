@@ -8,4 +8,4 @@ RUN tar xzf $WILDFLY_FILE
 EXPOSE 8080 8443
 RUN ln -s /opt/wildfly-$WILDFLY_VERSION /opt/wildfly
 ENV LAUNCH_JBOSS_IN_BACKGROUND=true
-CMD ["/opt/wildfly/bin/standalone.sh", "--server-config=standalone-ha.xml", "-b=0.0.0.0"]
+CMD ["/opt/wildfly/bin/standalone.sh", "--server-config=standalone-full-ha.xml", "-b=0.0.0.0"]
