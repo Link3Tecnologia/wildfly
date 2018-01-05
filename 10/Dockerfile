@@ -1,5 +1,5 @@
 # link3tecnologia/wildfly:10
-FROM link3tecnologia/centosjava8:7
+FROM link3tecnologia/oraclejava:8
 ENV WILDFLY_VERSION=10.1.0.Final
 ENV WILDFLY_FILE=wildfly-$WILDFLY_VERSION.tar.gz
 WORKDIR /opt
